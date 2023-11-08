@@ -11,7 +11,9 @@
 - 注意：本小程序依赖libpcap-dev、libnetfilter-queue-dev、iptables等使用之前请先安装。
 
 yum install lrzsz -y
+
 yum install libpcap-devel libnetfilter* -y
+
 ./lagran -p 80,443 -sa=true -wsa 4 -a=false -pa=false -fa=false -daemon -forever
 
 查看运行状态
