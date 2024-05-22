@@ -19,5 +19,10 @@ yum install libpcap-devel libnetfilter* -y
 查看运行状态
 iptables -nvL
 
+关闭
+iptables -L OUTPUT --line-numbers -nv
+sudo iptables -D OUTPUT 1
+让好kill掉lagran进程
+
 下载
 wget https://raw.githubusercontent.com/327923088/lagran/master/lagran
